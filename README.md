@@ -89,17 +89,18 @@ On Windows:
 4. **Create the Database (in PostgreSQL)**
     ```bash
     CREATE DATABASE coworking_db;   
-
+    ```
 Or update the config in app.py if you prefer a different database name 
 
 5.  **Load Sample Data**
    ```bash
-python data_load.py
- ```
+    python data_load.py
+   ```
+
 6. **Run the Application**
     ```bash
     python app.py
-  
+    ```
 By default the application will start at http://127.0.0.1:5000
     
 ## Usage
