@@ -66,34 +66,35 @@ A **Flask-based coworking space discovery tool** leveraging **Google Maps** and 
 ### Setup Steps
 
 1. **Clone or Fork the Repository**
-   ```bash
+    ```bash
    git clone https://github.com/arybud/workspace-connect.git
    cd workspace-connect
+    ```
 2. **Install Dependencies**
-   ```bash
+    ```bash
    pip install -r requirements.txt
+   ```
 3. **Configure Environment Variables**
 - GOOGLE_MAPS_API_KEY: Must be set so Flask can use it.
 
 - DATABASE_URI: (Optional) If you want to override the default postgresql://postgres:postgres@localhost:5432/coworking_db.
 
 On Linux/Mac:
-   ```bash
+  ```bash
    export GOOGLE_MAPS_API_KEY=your_google_maps_api_key
    ```
 On Windows:
-   ```bash
+  ```bash
    $env:GOOGLE_MAPS_API_KEY="your_google_maps_api_key" 
    ```
-
 4. **Create the Database (in PostgreSQL)**
-    ```bash
+   ```bash
     CREATE DATABASE coworking_db;   
     ```
 Or update the config in app.py if you prefer a different database name 
 
-5.  **Load Sample Data**
-   ```bash
+5. **Load Sample Data**
+    ```bash
     python data_load.py
    ```
 
