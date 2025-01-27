@@ -48,10 +48,10 @@ A **Flask-based coworking space discovery tool** leveraging **Google Maps** and 
 ![Homepage](./images/homepage_screenshot.png)
 
 ### 2. Filter View
-![Search & Filter](./images/filter_screenshot.png)
+![Filter](./images/filter_screenshot.png)
 
 ### 2. Search View
-![Search & Filter](./images/search_screenshot.png)
+![Search](./images/search_screenshot.png)
 
 ### 3. Coworking Space Details
 ![Space Details](./images/details_screenshot.png)
