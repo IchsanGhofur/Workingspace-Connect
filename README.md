@@ -80,28 +80,28 @@ A **Flask-based coworking space discovery tool** leveraging **Google Maps** and 
 On Linux/Mac:
    ```bash
    export GOOGLE_MAPS_API_KEY=your_google_maps_api_key
-```
+   ```
 On Windows:
    ```bash
    $env:GOOGLE_MAPS_API_KEY="your_google_maps_api_key" 
-```
+   ```
 
 4. **Create the Database (in PostgreSQL)**
-    ```sql
-CREATE DATABASE coworking_db; 
+    ```bash
+    CREATE DATABASE coworking_db;   
 
 Or update the config in app.py if you prefer a different database name 
-```
+
 5.  **Load Sample Data**
    ```bash
 python data_load.py
-    ```
+ ```
 6. **Run the Application**
     ```bash
-python app.py
-
+    python app.py
+  
 By default the application will start at http://127.0.0.1:5000
-    ```
+    
 ## Usage
 
 1. **Visit the Homepage**  
