@@ -79,14 +79,14 @@ A **Flask-based coworking space discovery tool** leveraging **Google Maps** and 
 
 - DATABASE_URI: (Optional) If you want to override the default postgresql://postgres:postgres@localhost:5432/coworking_db.
 
-On Linux/Mac:
-  ```bash
-   export GOOGLE_MAPS_API_KEY=your_google_maps_api_key
-   ```
-On Windows:
-  ```bash
-   $env:GOOGLE_MAPS_API_KEY="your_google_maps_api_key" 
-   ```
+    On Linux/Mac:
+    ```bash
+    export GOOGLE_MAPS_API_KEY=your_google_maps_api_key
+    ```
+    On Windows:
+    ```bash
+    $env:GOOGLE_MAPS_API_KEY="your_google_maps_api_key" 
+    ```
 4. **Create the Database (in PostgreSQL)**
    ```bash
     CREATE DATABASE coworking_db;   
