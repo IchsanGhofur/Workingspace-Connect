@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ space.name }} - Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="/" class="home-button">WorkspaceConnect</a>
+            <h1>{{ space.name }}</h1>
+        </header>
+
+        <!-- Details Table -->
+        <table class="details-table">
+            <tr>
+                <th>Distance</th>
+                <td id="distance-cell">Calculating...</td>
+                <th>Monthly Price</th>
+                <td>Rs.{{ space.price }}</td>
+            </tr>
+            <tr>
+                <th>Opening Time</th>
+                <td>
+                    {% if space.opening_time %}
+                        {{ space.opening_time.strftime('%H:%M:%S') }}
+                    {% else %}
+                        N/A
+                    {% endif %}
+                </td>
+                <th>Closing Time</th>
+                <td>
+                    {% if space.closing_time %}
+                        {{ space.closing_time.strftime('%H:%M:%S') }}
+                    {% else %}
+                        N/A
+                    {% endif %}
+                </td>
+            </tr>
+            <tr>
+                <th>Food Availability</th>
+                <td colspan="3">{{ 'Yes' if space.food_availability else 'No' }}</td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td colspan="3">{{ space.address }}</td>
+            </tr>
+        </table>
+
+        <!-- Map Canvas -->
+        <div id="map-canvas" class="map-canvas" style="width: 100%; height: 400px; margin-top: 20px;"></div>
+    </div>
+
+    <!-- JavaScript Code -->
+    <script>
+        function initMap() {
+            const destLat = {{ space.latitude | tojson }};
+            const destLng = {{ space.longitude | tojson }};
+
+            if (destLat === null || destLng === null) {
+                alert('Destination coordinates are not available.');
+                return;
+            }
+
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(position => {
+                    const userLat = position.coords.latitude;
+                    const userLng = position.coords.longitude;
+
+                    // Calculate and display distance
+                    const userLocation = new google.maps.LatLng(userLat, userLng);
+                    const destination = new google.maps.LatLng(destLat, destLng);
+
+                    const distanceInMeters = google.maps.geometry.spherical.computeDistanceBetween(userLocation, destination);
+                    const distanceInKm = distanceInMeters / 1000;
+                    document.getElementById('distance-cell').innerText = distanceInKm.toFixed(2) + ' km';
+
+                    // Initialize map
+                    const map = new google.maps.Map(document.getElementById('map-canvas'), {
+                        zoom: 14,
+                        center: userLocation,
+                    });
+
+                    const directionsService = new google.maps.DirectionsService();
+                    const directionsRenderer = new google.maps.DirectionsRenderer();
+                    directionsRenderer.setMap(map);
+
+                    const request = {
+                        origin: userLocation,
+                        destination: destination,
+                        travelMode: google.maps.TravelMode.DRIVING,
+                    };
+
+                    directionsService.route(request, (result, status) => {
+                        if (status === 'OK') {
+                            directionsRenderer.setDirections(result);
+                        } else {
+                            alert('Directions request failed due to ' + status);
+                        }
+                    });
+                }, error => {
+                    alert('Error obtaining your location. Please try again.');
+                    console.error(error);
+                });
+            } else {
+                alert("Geolocation is not supported by this browser.");
+            }
+        }
+    </script>
+
+    <!-- Google Maps JavaScript API -->
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key={{ google_key }}&libraries=places,geometry&callback=initMap"
+    ></script>
+</body>
+</html>

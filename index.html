@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkspaceConnect</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script
+    async
+    defer
+    src="https://maps.googleapis.com/maps/api/js?key={{ google_key }}&libraries=places,geometry&callback=initMap"
+  ></script>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <a href="/" class="home-button">WorkspaceConnect</a>
+            <h1>Welcome to WorkspaceConnect</h1>
+            <p>Find the best coworking spaces near you!</p>
+        </header>
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search coworking spaces..." onkeyup="searchCoworkingSpaces()">
+        </div>
+
+        <!-- Filters -->
+        <div class="filters">
+            <h2>Filter by Features</h2>
+            <label for="opening-time">Opening Time:</label>
+            <input type="time" id="opening-time">
+            <label for="closing-time">Closing Time:</label>
+            <input type="time" id="closing-time">
+            <label for="price">Max Price:</label>
+            <input type="number" id="price" min="0" step="100">
+            <button onclick="filterCoworkingSpaces()">Apply Filters</button>
+        </div>
+
+        <!-- Results -->
+        <div id="coworking-spaces-list" class="coworking-spaces-list">
+            <!-- Coworking spaces will be dynamically inserted here -->
+        </div>
+
+            
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
