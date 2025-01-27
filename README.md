@@ -76,6 +76,7 @@ A **Flask-based coworking space discovery tool** leveraging **Google Maps** and 
 - GOOGLE_MAPS_API_KEY: Must be set so Flask can use it.
 
 - DATABASE_URI: (Optional) If you want to override the default postgresql://postgres:postgres@localhost:5432/coworking_db.
+
 On Linux/Mac:
    ```bash
    export GOOGLE_MAPS_API_KEY=your_google_maps_api_key
@@ -86,21 +87,21 @@ On Windows:
    ```
 
 4. **Create the Database (in PostgreSQL)**
-```sql
+    ```sql
 CREATE DATABASE coworking_db; 
 
 Or update the config in app.py if you prefer a different database name 
-```
+    ```
 5.  **Load Sample Data**
-```bash
+    ```bash
 python data_load.py
-```
+    ```
 6. **Run the Application**
-```bash
+    ```bash
 python app.py
 
 By default the application will start at http://127.0.0.1:5000
-```
+    ```
 ## Usage
 
 1. **Visit the Homepage**  
