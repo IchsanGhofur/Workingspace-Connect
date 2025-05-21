@@ -1,15 +1,21 @@
 import os
+from dotenv import load_dotenv
 from flask import Flask, render_template, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from geopy.distance import geodesic
 from datetime import datetime
 import csv
 
+load_dotenv()  # Load environment variables from .env file
+
 app = Flask(__name__)
 app.config["GOOGLE_MAPS_API_KEY"] = os.environ.get("GOOGLE_MAPS_API_KEY")
 
 # Set up PostgreSQL database URI
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:postgres@localhost:5432/coworking_db?connect_timeout=10&sslmode=prefer'
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get(
+    'DATABASE_URI', 
+    'postgresql://postgres:postgres@localhost:5432/coworking_db?connect_timeout=10&sslmode=prefer'
+)
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
