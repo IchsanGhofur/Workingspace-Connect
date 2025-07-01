@@ -1,0 +1,451 @@
+{
+  "id": "7f158f9c-22b8-4489-8924-f54931e753fd",
+  "version": "2.0",
+  "name": "test-working-space",
+  "url": "https://urban-tribble-4jgqgr6v5gxrhjj7r-5000.app.github.dev",
+  "tests": [{
+    "id": "2a7f440c-5aad-4b2a-a1d4-423ff16c874a",
+    "name": "tset-selenium",
+    "commands": [{
+      "id": "01b1bcc4-4d1f-411d-926b-58780810ea5a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e777cf68-f16c-4c2a-acf5-99df76358d07",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1170x692",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "373a6eeb-4494-449c-b474-a317999c7c25",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-bar",
+      "targets": [
+        ["id=search-bar", "id"],
+        ["css=#search-bar", "css:finder"],
+        ["xpath=//input[@id='search-bar']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3b20568-96c8-4aaf-b85f-6c542a0225f6",
+      "comment": "",
+      "command": "type",
+      "target": "id=search-bar",
+      "targets": [
+        ["id=search-bar", "id"],
+        ["css=#search-bar", "css:finder"],
+        ["xpath=//input[@id='search-bar']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "jakarta"
+    }, {
+      "id": "5894887d-9813-4431-8c3a-a64698c8d3f4",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=search-bar",
+      "targets": [
+        ["id=search-bar", "id"],
+        ["css=#search-bar", "css:finder"],
+        ["xpath=//input[@id='search-bar']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "4ecdd442-e0a5-4c81-8271-a22441143362",
+      "comment": "",
+      "command": "type",
+      "target": "id=search-bar",
+      "targets": [
+        ["id=search-bar", "id"],
+        ["css=#search-bar", "css:finder"],
+        ["xpath=//input[@id='search-bar']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb0e89bd-20be-409e-8c27-225d0c5375a1",
+      "comment": "",
+      "command": "click",
+      "target": "id=opening-time",
+      "targets": [
+        ["id=opening-time", "id"],
+        ["css=#opening-time", "css:finder"],
+        ["xpath=//input[@id='opening-time']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc669e72-cc60-4b75-b82c-212063e6c0b2",
+      "comment": "",
+      "command": "type",
+      "target": "id=opening-time",
+      "targets": [
+        ["id=opening-time", "id"],
+        ["css=#opening-time", "css:finder"],
+        ["xpath=//input[@id='opening-time']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "10:00"
+    }, {
+      "id": "7f94a6db-a1b9-4583-90c2-a8bb8aa90973",
+      "comment": "",
+      "command": "click",
+      "target": "id=closing-time",
+      "targets": [
+        ["id=closing-time", "id"],
+        ["css=#closing-time", "css:finder"],
+        ["xpath=//input[@id='closing-time']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "668e81fc-a826-489f-908a-75dc031623ac",
+      "comment": "",
+      "command": "type",
+      "target": "id=closing-time",
+      "targets": [
+        ["id=closing-time", "id"],
+        ["css=#closing-time", "css:finder"],
+        ["xpath=//input[@id='closing-time']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "12:00"
+    }, {
+      "id": "8c981782-5291-443c-bd3e-048fcc8dc276",
+      "comment": "",
+      "command": "click",
+      "target": "id=price",
+      "targets": [
+        ["id=price", "id"],
+        ["css=#price", "css:finder"],
+        ["xpath=//input[@id='price']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "19114be7-746f-4495-a467-4003e8044f8d",
+      "comment": "",
+      "command": "type",
+      "target": "id=price",
+      "targets": [
+        ["id=price", "id"],
+        ["css=#price", "css:finder"],
+        ["xpath=//input[@id='price']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "ec1066e9-6c43-46e4-a7b7-ed9409501517",
+      "comment": "",
+      "command": "click",
+      "target": "id=price",
+      "targets": [
+        ["id=price", "id"],
+        ["css=#price", "css:finder"],
+        ["xpath=//input[@id='price']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fcee3e03-cd00-43a3-8deb-c31a240b5830",
+      "comment": "",
+      "command": "click",
+      "target": "id=price",
+      "targets": [
+        ["id=price", "id"],
+        ["css=#price", "css:finder"],
+        ["xpath=//input[@id='price']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "74b50900-8099-485d-ac5a-4ee954db2492",
+      "comment": "",
+      "command": "type",
+      "target": "id=price",
+      "targets": [
+        ["id=price", "id"],
+        ["css=#price", "css:finder"],
+        ["xpath=//input[@id='price']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "200"
+    }, {
+      "id": "c4557fc9-13ce-4d46-9673-6becb704021c",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=price",
+      "targets": [
+        ["id=price", "id"],
+        ["css=#price", "css:finder"],
+        ["xpath=//input[@id='price']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "199.08331298828125,9.04998779296875"
+    }, {
+      "id": "c7fa9e8a-bfa2-4e77-a9dd-116cf2ad6529",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=price",
+      "targets": [
+        ["id=price", "id"],
+        ["css=#price", "css:finder"],
+        ["xpath=//input[@id='price']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "199.08331298828125,9.04998779296875"
+    }, {
+      "id": "97b0273e-8ef4-485f-8e8c-c4599db05eb4",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=price",
+      "targets": [
+        ["id=price", "id"],
+        ["css=#price", "css:finder"],
+        ["xpath=//input[@id='price']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "199.08331298828125,9.04998779296875"
+    }, {
+      "id": "74b0a3e3-767f-4cb7-a3c7-a87c51650566",
+      "comment": "",
+      "command": "click",
+      "target": "id=price",
+      "targets": [
+        ["id=price", "id"],
+        ["css=#price", "css:finder"],
+        ["xpath=//input[@id='price']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dfca2a5d-9488-4b63-bbd9-0f731920de33",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "id=price",
+      "targets": [
+        ["id=price", "id"],
+        ["css=#price", "css:finder"],
+        ["xpath=//input[@id='price']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "353f8b6e-51ee-480b-b1be-67a5b8a32c32",
+      "comment": "",
+      "command": "type",
+      "target": "id=price",
+      "targets": [
+        ["id=price", "id"],
+        ["css=#price", "css:finder"],
+        ["xpath=//input[@id='price']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "300"
+    }, {
+      "id": "32951a8d-7b85-47cf-b7c6-5628055d32d4",
+      "comment": "",
+      "command": "click",
+      "target": "id=price",
+      "targets": [
+        ["id=price", "id"],
+        ["css=#price", "css:finder"],
+        ["xpath=//input[@id='price']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b94a648-d338-4e91-bb7b-1b0f72683b27",
+      "comment": "",
+      "command": "type",
+      "target": "id=price",
+      "targets": [
+        ["id=price", "id"],
+        ["css=#price", "css:finder"],
+        ["xpath=//input[@id='price']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "400"
+    }, {
+      "id": "3b26db4e-8e29-4424-b5de-849b792e5901",
+      "comment": "",
+      "command": "click",
+      "target": "id=price",
+      "targets": [
+        ["id=price", "id"],
+        ["css=#price", "css:finder"],
+        ["xpath=//input[@id='price']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05a5bb01-3bb2-4581-a4d0-759a826f6110",
+      "comment": "",
+      "command": "type",
+      "target": "id=price",
+      "targets": [
+        ["id=price", "id"],
+        ["css=#price", "css:finder"],
+        ["xpath=//input[@id='price']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "500"
+    }, {
+      "id": "89d5592d-cbea-415e-8f20-6e809731e8f9",
+      "comment": "",
+      "command": "click",
+      "target": "id=price",
+      "targets": [
+        ["id=price", "id"],
+        ["css=#price", "css:finder"],
+        ["xpath=//input[@id='price']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6b8aa6e-1b1d-4ba8-8e32-9d2d09582dfa",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@onclick='filterCoworkingSpaces()']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Apply Filters')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a175d4fc-8789-45a0-b78c-f56f3dadc33b",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-bar",
+      "targets": [
+        ["id=search-bar", "id"],
+        ["css=#search-bar", "css:finder"],
+        ["xpath=//input[@id='search-bar']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "97239cb8-6840-409e-8b06-78b7ab1f6e7d",
+      "comment": "",
+      "command": "type",
+      "target": "id=search-bar",
+      "targets": [
+        ["id=search-bar", "id"],
+        ["css=#search-bar", "css:finder"],
+        ["xpath=//input[@id='search-bar']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "jakarta"
+    }, {
+      "id": "f1fcfbff-f631-4fe4-b0ec-a8882d1de48e",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@onclick='filterCoworkingSpaces()']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Apply Filters')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7be2480-1ef2-4229-ab8f-f58742c06d02",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@onclick='filterCoworkingSpaces()']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Apply Filters')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "84c0034f-ef6f-40c6-a1e0-022fa51c0969",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@onclick='filterCoworkingSpaces()']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Apply Filters')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "567ed662-0744-49d9-b1e8-fef12078e018",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@onclick='filterCoworkingSpaces()']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Apply Filters')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9c52a68-cf45-4b99-8bbb-80ee8f1a08bd",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@onclick='filterCoworkingSpaces()']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Apply Filters')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "806dbf8d-81df-4ae4-9178-c28f5b26dcf0",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@onclick='filterCoworkingSpaces()']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Apply Filters')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ede89a7-536d-42a9-a95e-3f3db733a2dd",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f266006-d247-4ad0-8e20-1e1fa6f0cd8d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filters",
+      "targets": [
+        ["css=.filters", "css:finder"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "347c549d-5215-474f-b879-202a27b8fe5d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["2a7f440c-5aad-4b2a-a1d4-423ff16c874a"]
+  }],
+  "urls": ["https://urban-tribble-4jgqgr6v5gxrhjj7r-5000.app.github.dev/"],
+  "plugins": []
+}
