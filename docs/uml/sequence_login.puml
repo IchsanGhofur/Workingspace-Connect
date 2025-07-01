@@ -1,0 +1,9 @@
+
+@startuml
+actor User
+User -> LoginPage : akses /login
+LoginPage -> AuthController : submit username/password
+AuthController -> Database : verifikasi kredensial
+Database --> AuthController : status login
+AuthController -> HomePage : redirect user
+@enduml

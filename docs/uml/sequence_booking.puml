@@ -1,0 +1,9 @@
+
+@startuml
+actor User
+User -> BookingPage : akses /booking
+BookingPage -> BookingController : submit form booking
+BookingController -> Database : simpan data booking
+Database --> BookingController : hasil penyimpanan
+BookingController -> ConfirmationPage : tampilkan konfirmasi
+@enduml

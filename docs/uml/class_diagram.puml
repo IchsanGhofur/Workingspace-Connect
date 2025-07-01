@@ -1,0 +1,36 @@
+
+@startuml
+class User {
+  +id: int
+  +username: str
+  +password: str
+}
+
+class Booking {
+  +id: int
+  +user_id: int
+  +workspace_id: int
+  +time: datetime
+}
+
+class Workspace {
+  +id: int
+  +name: str
+  +location: str
+}
+
+class AuthController {
+  +login()
+  +logout()
+}
+
+class BookingController {
+  +create_booking()
+  +cancel_booking()
+}
+
+User "1" -- "many" Booking : membuat >
+Workspace "1" -- "many" Booking : digunakan >
+User ..> AuthController : uses
+User ..> BookingController : uses
+@enduml
